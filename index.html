@@ -1,84 +1,18 @@
 Introduction
 
 
-The Strange Case of Dr. Jekyll and Mr. Hyde tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde.tells the 
-story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel’s supporting  cast is a man by the name of 
-Mr. Poole, Dr. Jekyll’s loyal butler.
 
-Poole is the butler for Jekyll, the static site generator. It’s designed and developed by @mdo to provide a clear and concise foundational setup for any Jekyll site.
-It does so by furnishing a full vanilla Jekyll install with example layouts, pages, posts, and styles.
+                                                              Arquitectura del Hardware.
 
-This demo site was last updated April 01, 2022.
 
-There are currently two themes built on Poole:
-
-Hyde
-Lanyon
-Learn more and contribute on GitHub.
-
-What’s included
-Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it like this one, includes the following:
-
--Complete Jekyll setup included (layouts, config, 404, RSS feed, posts, archive page, and example page)
--Mobile friendly design and development
--Easily scalable text and component sizing with rem units in the CSS
--Support for a wide gamut of HTML elements
--Related posts (time-based, because Jekyll) below each post
--Syntax highlighting, courtesy Jekyll’s built-in support for Rouge
-
-Additional features are available in individual themes.
-
-Browser support
-Poole and its themes are by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), Firefox, and Edge.
-
-Download
-These themes are developed on and hosted with GitHub. Head to the GitHub repository for downloads, bug reports, and features requests.
-
-Thanks!
-
----
-layout: default  
-
-title: Home
-
----
-
-<div class="posts">
+El hardware de una computadora está compuesto por la unidad central, los dispositivos periféricos de entrada, de salida y de entrada/salida, así como por los cables, 
+conexiones y puertos que permiten la interacción de todos ellos. Todos estos elementos en conjunto constituyen la arquitectura básica de la computadora.
   
-  {% for post in paginator.posts %}
-  
-  <article class="post">
-    
-    <h1 class="post-title">
-      
-      <a href="{{ post.url | relative_url }}">
-        
-        {{ post.title }}
-        
-       
-      </a>
-      
-    </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+El concepto de la arquitectura de las computadoras consiste en un conjunto de técnicas que permiten construir máquinas lógicas generales programables en forma práctica.
+En materia terminológica se distingue la "arquitectura" de un computador de la "organización" de un computador.
 
-    {{ post.content }}
-    
-  </article>
-  
-  {% endfor %
- 
-</div>
+Es el conjunto de programas que administran los recursos de la computadora y que ayuda en el desarrollo y ejecución de los programas o software.
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+La arquitectura de software define, de manera abstracta, los componentes que llevan a cabo alguna tarea de computación, sus interfaces y la comunicación entre ellos. 
+Toda arquitectura debe ser implementable en una arquitectura física, que consiste simplemente en determinar qué computadora tendrá asignada cada tarea.
